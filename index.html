@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- bootsrap V.4.6.x-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Ayun</title>
+	<title>Ayun</title>
+
 </head>
 <body>
 
@@ -67,6 +72,166 @@
 				Consequuntur commodi, eveniet dolor eaque numquam ad sequi aspernatur perferendis beatae dolore explicabo quas voluptatem quos totam vero possimus architecto tempore amet qui labore minus iure consectetur maiores ea! Quaerat!</p>
 			</div>
 		</section>
+
+		<!-- SERVICIOS -->
+		<section id="servicios">
+			<div id="containerGrid__servicios" class="formatoTitulos">
+				<p>Servicios</p>
+			</div>
+		</section>
+
+		<section id="contenidoServicios">
+
+			<div id="containerGrid__contenidoServicios" class="container">
+					<div class="row">
+						<div class="col-md-10 mx-auto">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+							<!-- Carousel indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+							</ol>   
+							<!-- Wrapper for carousel items -->
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="./images/image1.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Lorem ipsum</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+													<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+												</div>						
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="./images/image1.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Lorem ipsum</h4>
+													<p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+													<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+												</div>						
+											</div>
+										</div>				
+										<div class="col-sm-4">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="./images/image1.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Lorem ipsum</h4>
+													<p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+													<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+												</div>						
+											</div>					
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-sm-4">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="./images/image2.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Lorem ipsum</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.</p>
+													<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+												</div>						
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="./images/image2.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Lorem ipsum</h4>
+													<p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in fringilla vivamus.</p>
+													<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+												</div>						
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="./images/image2.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Lorem ipsum</h4>
+													<p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus adipiscing dolor.</p>
+													<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
+												</div>						
+											</div>					
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Carousel controls -->
+							<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							</a>
+							<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							</a>
+						</div>
+						</div>
+					</div>
+			</div>
+
+		</section>
+	
+
+		<!-- CONTACTO -->
+		<section id="contacto">
+			<div id="containerGrid__contacto" class="formatoTitulos">
+				<p>Contacto</p><br><br>
+			</div>
+		</section>
+
+		<section id="contenidoContacto">
+			<div class="container">
+				<div id="containerGrid__contenidoContacto" >
+					<form action="" id="formularioContacto">
+						<div class="form-group">     
+							<!-- Nombre y Apellido-->
+							<div class="form-group">
+								<label for="inputNnombre" class="col-form-label-sm">Nombre</label>
+								<input required id="inputNnombre" type="text" class="form-control form-control-sm"  placeholder = "Ingrese su Apellido">
+							</div>
+							<!-- Correo -->
+							<div class="form-group">
+								<label for="inputCorreo" class="form-label">Correo</label>
+								<input required type="email" class="form-control form-control-sm" id="inputCorreo">
+							</div>
+							<!-- Telefono -->
+							<div class="form-group">
+								<label for="inputTel" class="form-label">Telefono</label>
+								<input required type="tel" class="form-control form-control-sm" id="inputTel">
+							</div>
+							<!-- Consulta -->
+							<div class="form-group">
+								<label for="inputConsulta" class="form-label">Consulta</label>
+								<textarea class="form-control form-control-sm" aria-label="consulta" rows="5" placeholder="Escriba aquí"></textarea>
+							</div>
+							<br>
+							<!-- Botón Enviar -->                               
+							<button type="submit" class="form-control boton boton--oscuro">
+								Enviar
+							</button>                                
+						</div> 
+					</form>
+				</div>
+			</div>
+		</section>
+
     </div>
 
 
@@ -78,11 +243,9 @@
 
 
 
-
-
-
-
-
-
+	<!-- bootstrap V.4.6.x-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
