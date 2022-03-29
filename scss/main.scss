@@ -16,7 +16,7 @@ p, span{
 .navBar{
     z-index: 1;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     background-color: $color1;
     width: 100%;
@@ -24,9 +24,14 @@ p, span{
     position: fixed;
     a{
         text-decoration: none;
-        font-size: 25px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-right: 10%;
+        color: black;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .navBarLinks{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
     }
 }
 
@@ -35,7 +40,7 @@ p, span{
 }
 
 .navBarLogo{
-    margin-right: 70% !important;
+    margin-left: 5%;
 }
 // DISEÑO GRID PRINCIPAL
 .containerGrid{
