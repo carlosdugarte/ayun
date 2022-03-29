@@ -1,4 +1,5 @@
-$color1: #FBE6D9;
+$color1: #FFE5D8;
+$colorfooter: #FBE6D9;
 
 body{
     padding: 0;
@@ -6,7 +7,13 @@ body{
     background-color: #FFFFFF;
 }
 
-#navBar{
+p{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+// DISEÑO NAVBAR
+.navBar{
     display: flex;
     justify-content: right;
     align-items: center;
@@ -18,14 +25,23 @@ body{
         text-decoration: none;
         font-size: 25px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-right: 10%;
     }
 }
 
-#containerGrid{
+.parrafosNegrita{
+    font-weight: bold;
+}
+
+.navBarLogo{
+    margin-right: 70% !important;
+}
+// DISEÑO GRID PRINCIPAL
+.containerGrid{
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto 50px 100px 50px 150px 50px 150px 50px 100px 50px 200px 300px;
+    grid-template-rows: auto auto auto auto auto 50px 100px 50px 150px 50px 150px 50px 100px 50px 200px auto;
     padding-top: 80px;
     grid-template-areas: "banner banner"
     "sobreAyun sobreAyun"
@@ -42,7 +58,7 @@ body{
     "contenidoTurnos contenidoTurnos"
     "contacto contacto"
     "contenidoContacto contenidoContacto"
-    "footer footer"
+    "footer footer";
 }
 
 section#banner{
@@ -99,48 +115,164 @@ section#contenidoContacto{
 section#footer{
     grid-area: footer;
 }
-
-#containerGrid__banner{
+// FORMATO BANNER DE INICIO
+.containerGrid__banner{
     img{
         width: 100%;
         height: auto;
     }
 }
-
+//FORMATO DE TITULOS
 .formatoTitulos{
     display: flex;
     justify-content: center;
     font-size: 36px;
     padding: 10px;
-}
-
-#containerGrid__textoSobreAyun{
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 1%;
     p{
-        font-size: 20px;
+        font-weight: 600;
+    }
+}
+// FORMATO INFORMACION DE INICIO
+.containerGrid__textoSobreAyun{
+    display: flex;
+    justify-content: left;
+    margin-left: 38%;
+    margin-right: 13%;
+    p{
+        font-size: 22px;
+        margin: 0;
+        display: inline;
+    }
+    ul{
+        margin: 0;
+        li{
+            font-size: 22px;
+            color: orange;
+        }
     }
 }
 
-#containerGrid__imagenSobreAyun{
+.containerGrid__imagenSobreAyun{
     display: flex;
-    justify-content: center;
-    margin-right: 10%;
+    justify-content: right;
+    margin-right: 38%;
 }
 
-#containerGrid__imagenSobreMi{
+.containerGrid__imagenSobreMi{
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    margin-left: 38%;
 }
 
-#containerGrid__textoSobreMi{
+.containerGrid__textoSobreMi{
     display: flex;
-    justify-content: center;
-    margin-right: 5%;
+    flex-direction: column;
+    justify-content: left;
     margin-left: 15%;
+    margin-right: 38%;
     p{
-        font-size: 20px;
+        font-size: 22px;
+        margin: 0;
     }
 }
+// FIN FORMATO DE INICIO
+
+// FORMATO FOOTER 
+.containerGrid__footer{
+    display: flex;
+    padding: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: $colorfooter;
+    justify-content: space-around;
+    p{
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    li{
+        list-style: none;
+        margin: 6px;
+        img{
+            width: auto;
+            height: 100%;
+            padding-right: 4px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
