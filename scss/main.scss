@@ -7,13 +7,14 @@ body{
     background-color: #FFFFFF;
 }
 
-p{
+p, span{
     font-family: 'Roboto', sans-serif;
     color: black;
 }
 
 // DISEÑO NAVBAR
 .navBar{
+    z-index: 1;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -41,7 +42,7 @@ p{
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto 50px 100px 50px 150px 50px 150px 50px 100px 50px 200px auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto 50px 150px 50px 100px 50px 200px auto;
     padding-top: 80px;
     grid-template-areas: "banner banner"
     "sobreAyun sobreAyun"
@@ -176,6 +177,78 @@ section#footer{
     }
 }
 // FIN FORMATO DE INICIO
+
+// PROPUESTA
+#containerGrid__contenidoPropuesta{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 19%;
+        text-align: center;
+        padding: 0.5%;
+        img{
+            margin-bottom: 10%;
+        }
+        p{
+            color: #FF948A;
+            font-weight: 500;
+        }
+    }
+}
+
+//TESTIMONIOS
+#contenidoTestimonios{
+    background: url("../images/backgroun-testimonios.svg");
+    background-size: cover;
+    height: auto;
+    padding: 3%;
+
+}
+#containerGrid__contenidoTestimonios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    margin-left: 10%;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .clippy{
+            background-color: #F0A29A;
+            width: 310px;
+            height: 310px;;
+            clip-path: polygon(0 11%, 100% 11%, 100% 75%, 75% 75%, 70% 100%, 55% 75%, 0% 75%);
+            text-align: center;
+            p{
+                padding: 10%;
+                padding-top: 15%;
+                padding-bottom: 15%;
+            }
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            img{
+                width: auto;
+            }
+            span{
+                font-weight: 500;
+                margin-top: 5%;
+            }
+        }
+    }
+}
 
 // FORMATO FOOTER 
 .containerGrid__footer{
