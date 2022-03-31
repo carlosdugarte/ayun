@@ -4,9 +4,17 @@ body {
   background-color: #FFFFFF;
 }
 
+
+
 p, span {
   font-family: 'Roboto', sans-serif;
   color: black;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  color: #FF948A;
+  font-size: 18px;
 }
 
 .navBar {
@@ -461,9 +469,17 @@ section#footer {
   height: 100vh;
   max-width: none;
   background-image: url(../images/formback.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-size: contain; }
+
+  
+  #containerGrid__textoServicios ul li p{
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+  }
+
 
 /* Carrusel */
 .carousel {
@@ -471,20 +487,6 @@ section#footer {
   padding: 0 80px; }
 
 .carousel .carousel-item {
-					   
-					   
-				
-							   
-								
-								 
-								 
-							
-							 
-							  
-						   
-							
-								  
-			 
   text-align: center;
   overflow: hidden; }
 
@@ -501,53 +503,34 @@ section#footer {
   text-transform: uppercase;
   font-weight: bold;
   border: none;
-  background: #a177ff;
+  background: #FF948A;
   padding: 6px 15px;
   margin-top: 5px; }
 
 .carousel .carousel-item .btn:hover {
-  background: #8c5bff; }
-						 
-			   
-			  
- 
+  background: #ff948aa1; }
+
 
 .carousel .carousel-item .btn i {
   font-size: 14px;
-  font-weight: bold;
-				
-							
-							 
-										 
-					  
-					  
+  font-weight: bold;	  
   margin-left: 5px; }
 				   
  
-
 .carousel .thumb-wrapper {
   margin: 5px;
   text-align: left;
   background: #fff;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1); }
-								
-								 
-								 
-						 
-						  
-								
- 
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
 
 .carousel .thumb-content {
+  font-family: 'Roboto', sans-serif;
   padding: 15px;
-  font-size: 13px; }
+  font-size: 12px; 
+  }
 				
-																							
-																							
-					 
- 
-
-.carousel-control-prev, .carousel-control-next {
+	.carousel-control-prev, .carousel-control-next {
   height: 44px;
   width: 44px;
   background: none;
@@ -568,29 +551,15 @@ section#footer {
   text-shadow: none;
   font-weight: bold; }
 			  
- 
-
 .carousel-control-prev i {
   margin-left: -3px; }
  
-
 .carousel-control-next i {
   margin-right: -3px; }
 				 
- 
-
-.carousel-indicators {
+ .carousel-indicators {
   bottom: -50px; }
-					   
 				
-				
-					  
-					   
-							
-							
-									
- 
-
 .carousel-indicators li, .carousel-indicators li.active {
   width: 10px;
   height: 10px;
@@ -601,9 +570,5 @@ section#footer {
 .carousel-indicators li {
   background: #ababab; }
 			  
- 
-
-.carousel-indicators li.active {
+ .carousel-indicators li.active {
   background: #555; }
-			   
-					 
