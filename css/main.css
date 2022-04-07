@@ -289,6 +289,27 @@ section#footer {
   margin-right: 38%;
 }
 
+.containerGrid__turnos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FBE6D9;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 30px;
+
+}
+
+.containerGrid__turnos p{
+  font-size: 22px;
+  margin: 0;
+  text-align: center;
+}
+
 .containerGrid__textoSobreMi p {
   font-size: 22px;
   margin: 0;
