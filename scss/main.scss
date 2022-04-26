@@ -135,6 +135,7 @@ section#footer{
 }
 //FORMATO DE TITULOS
 .formatoTitulos{
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     font-size: 36px;
@@ -219,9 +220,9 @@ section#footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 19%;
         text-align: center;
         padding: 0.5%;
+        width: 19%;
         img{
             margin-bottom: 10%;
         }
@@ -252,8 +253,8 @@ section#footer{
         align-items: flex-end;
         .clippy{
             background-color: #F0A29A;
-            width: 310px;
-            height: 310px;;
+            width: 330px;
+            height: 330px;;
             clip-path: polygon(0 11%, 100% 11%, 100% 75%, 75% 75%, 70% 100%, 55% 75%, 0% 75%);
             text-align: center;
             p{
@@ -432,6 +433,30 @@ section#footer{
 //TABLET
 @media only screen and (max-width: 768px){
 
+    //PROPUESTA
+    #containerGrid__contenidoPropuesta{
+        div{
+            width: 50%;
+            font-size: 20px;
+        }
+    }
+
+
+    //TESTIMONIOS
+    #containerGrid__contenidoTestimonios{
+        justify-content: center;
+        margin-bottom: 200px;
+
+        div{
+            font-size: 20px;
+            .clippy{
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+    }
+
     //Servicios
     //Carrusel
     .carousel .thumb-content {
@@ -472,6 +497,29 @@ section#footer{
 }
 //CELULAR
 @media only screen and (max-width: 480px){
+
+    //PROPUESTA
+    #containerGrid__contenidoPropuesta{
+        margin-bottom:200px ;
+        div{
+            width: 100%;
+            font-size: 30px;
+        }
+    }
+
+     //TESTIMONIOS
+    #containerGrid__contenidoTestimonios{
+        justify-content: center;
+        margin-bottom: 200px;
+        div{
+            font-size: 30px;
+            .clippy{
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+    }
 
     //Servicios
     //Carrusel
