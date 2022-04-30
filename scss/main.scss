@@ -17,28 +17,8 @@ h4{
     color: #FF948A;
 }
 
-// DISEÑO NAVBAR
-.navBar{
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $color1;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: 18px;
-        font-family: 'Roboto', sans-serif;
-    }
-    .navBarLinks{
-        width: 50%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
+
+
 
 .parrafosNegrita{
     font-weight: bold;
@@ -47,30 +27,37 @@ h4{
 .navBarLogo{
     margin-left: 5%;
 }
+
+
 // DISEÑO GRID PRINCIPAL
-.containerGrid{
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    padding-top: 80px;
-    grid-template-areas: "banner banner"
-    "sobreAyun sobreAyun"
-    "textoSobreAyun imagenSobreAyun"
-    "sobreMi sobreMi"
-    "imagenSobreMi textoSobreMi"
-    "propuesta propuesta"
-    "contenidoPropuesta contenidoPropuesta"
-    "testimonios testimonios"
-    "contenidoTestimonios contenidoTestimonios"
-    "servicios servicios"
-    "contenidoServicios contenidoServicios"
-    "turnos turnos"
-    "contenidoTurnos contenidoTurnos"
-    "contacto contacto"
-    "contenidoContacto contenidoContacto"
-    "footer footer";
-}
+
+
+    .containerGrid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "banner banner"
+        "sobreAyun sobreAyun"
+        "textoSobreAyun imagenSobreAyun"
+        "sobreMi sobreMi"
+        "imagenSobreMi textoSobreMi"
+        "propuesta propuesta"
+        "contenidoPropuesta contenidoPropuesta"
+        "testimonios testimonios"
+        "contenidoTestimonios contenidoTestimonios"
+        "servicios servicios"
+        "contenidoServicios contenidoServicios"
+        "turnos turnos"
+        "contenidoTurnos contenidoTurnos"
+        "contacto contacto"
+        "contenidoContacto contenidoContacto"
+        "footer footer";
+    }
+
+
+
+
 
 section#banner{
     grid-area: banner;
@@ -144,6 +131,8 @@ section#footer{
     }
 }
 // FORMATO INFORMACION DE INICIO
+
+
 .containerGrid__textoSobreAyun{
     display: flex;
     justify-content: left;
@@ -161,6 +150,10 @@ section#footer{
             color: orange;
         }
     }
+}
+
+#imagenSobreMi{
+    align-items: center;
 }
 
 .containerGrid__imagenSobreAyun{
@@ -430,14 +423,246 @@ section#footer{
 
 //TABLET
 @media only screen and (max-width: 768px){
+    // Grid
+    .containerGrid{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "banner"
+        "sobreAyun"
+        "textoSobreAyun"
+        "imagenSobreAyun"
+        "sobreMi"
+        "textoSobreMi"
+        "imagenSobreMi"
+        "propuesta"
+        "contenidoPropuesta"
+        "testimonios"
+        "contenidoTestimonios"
+        "servicios"
+        "contenidoServicios"
+        "turnos"
+        "contenidoTurnos"
+        "contacto"
+        "contenidoContacto"
+        "footer";
+    }
+
+    // FORMATO INFORMACIÓN DE INICIO
+    .containerGrid__textoSobreAyun{
+        display: flex;
+        justify-content: center;
+        margin: 0 10% 20px 10%;
+    }
+
+    .containerGrid__imagenSobreAyun{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .containerGrid__imagenSobreMi{
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 40px 0;
+    }
+
+    .containerGrid__textoSobreMi{
+        display: flex;
+        justify-content: center;
+        margin: 0 10% 20px 10%;
+    }
+
+    // FORMATO FOOTER
+
+    .containerGrid__footer{
+        display: flex;
+        padding: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+        background-color: $colorfooter;
+        justify-content: space-around;
+        p{
+            margin: 0;
+            font-size: 20px;
+        }
+        
+        li{
+            list-style: none;
+            margin: 6px;
+            img{
+                width: auto;
+                height: 100%;
+                padding-right: 4px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
 
 }
 //CELULAR
 @media only screen and (max-width: 480px){
 
+        // Grid
+        .containerGrid{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+            grid-template-areas: 
+            "banner"
+            "sobreAyun"
+            "textoSobreAyun"
+            "imagenSobreAyun"
+            "sobreMi"
+            "textoSobreMi"
+            "imagenSobreMi"
+            "propuesta"
+            "contenidoPropuesta"
+            "testimonios"
+            "contenidoTestimonios"
+            "servicios"
+            "contenidoServicios"
+            "turnos"
+            "contenidoTurnos"
+            "contacto"
+            "contenidoContacto"
+            "footer";
+        }
+    
+        // FORMATO INFORMACIÓN DE INICIO
+        .containerGrid__textoSobreAyun{
+            display: flex;
+            justify-content: left;
+            margin: 0 10% 20px 10%;
+        }
+    
+        .containerGrid__imagenSobreAyun{
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 20px 0;
+        }
+    
+        .containerGrid__imagenSobreMi{
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 40px 0;
+        }
+    
+        .containerGrid__textoSobreMi{
+            display: flex;
+            justify-content: center;
+            margin: 0 10% 20px 10%;
+        }
+
+        // FORMATO FOOTER
+
+        .containerGrid__footer{
+            display: flex;
+            padding: 20px;
+            padding-left: 1%;
+            padding-right: 1%;
+            background-color: $colorfooter;
+            justify-content: space-around;
+            p{
+                margin: 0;
+                font-size: 13px;
+            }
+            
+            li{
+                list-style: none;
+                margin: 6px;
+                padding: 0;
+                img{
+                    width: auto;
+                    height: 100%;
+                    padding-right: 4px;
+                }
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 13px;
+                }
+            }
+        }
 }
 
 
+// mediaquery extra para el inicio
+@media only screen and (max-width: 1300px){
+
+
+    // FORMATO INFORMACIÓN DE INICIO
+    .containerGrid__textoSobreAyun{
+        display: flex;
+        justify-content: center;
+        margin: 0 6% 20px 6%;
+    }
+
+    .containerGrid__imagenSobreAyun{
+        display: flex;
+        justify-content: center;
+        margin: 20px 6% 20px 6%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .containerGrid__imagenSobreMi{
+        display: flex;
+        justify-content: center;
+        margin: 10px 6% 40px 6%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .containerGrid__textoSobreMi{
+        display: flex;
+        justify-content: center;
+        margin: 0 6% 20px 6%;
+    }
+
+    // footer
+
+    .containerGrid__footer{
+        display: flex;
+        padding: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+        background-color: $colorfooter;
+        justify-content: space-around;
+        p{
+            margin: 0;
+            font-size: 20px;
+        }
+        
+        li{
+            list-style: none;
+            margin: 6px;
+            img{
+                width: auto;
+                height: 100%;
+                padding-right: 4px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+            }
+        }
+    }
+}
+// fin mediaquery 1300px
 
 
 
