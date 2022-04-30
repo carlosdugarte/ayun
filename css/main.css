@@ -22,7 +22,22 @@ h4 {
   width: 100%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-  grid-template-areas: "banner banner" "sobreAyun sobreAyun" "textoSobreAyun imagenSobreAyun" "sobreMi sobreMi" "imagenSobreMi textoSobreMi" "propuesta propuesta" "contenidoPropuesta contenidoPropuesta" "testimonios testimonios" "contenidoTestimonios contenidoTestimonios" "servicios servicios" "contenidoServicios contenidoServicios" "turnos turnos" "contenidoTurnos contenidoTurnos" "contacto contacto" "contenidoContacto contenidoContacto" "footer footer"; }
+  grid-template-areas: "banner banner"
+ "sobreAyun sobreAyun"
+ "textoSobreAyun imagenSobreAyun"
+ "sobreMi sobreMi"
+ "imagenSobreMi textoSobreMi"
+ "propuesta propuesta"
+ "contenidoPropuesta contenidoPropuesta"
+ "testimonios testimonios"
+ "contenidoTestimonios contenidoTestimonios"
+ "servicios servicios"
+ "contenidoServicios contenidoServicios"
+ "turnos turnos"
+ "contenidoTurnos contenidoTurnos"
+ "contacto contacto"
+ "contenidoContacto contenidoContacto"
+ "footer footer"; }
 
 section#banner {
   grid-area: banner; }
@@ -130,8 +145,13 @@ section#footer {
 
 .containerGrid__turnos {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #FBE6D9;
   margin-left: 15%;
   margin-right: 15%;
@@ -232,11 +252,19 @@ section#footer {
 
 #contenidoContacto {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-evenly;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: white;
   /* padding: 25px;
     margin: 25px; */
@@ -251,18 +279,22 @@ section#footer {
 /* Carrusel */
 .carousel {
   margin: 30px auto 60px;
-  padding: 0 80px; }
+  padding: 0 80px;
+}
 
 .carousel .carousel-item {
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .carousel .carousel-item h4 {
-  font-family: 'Varela Round', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+}
 
 .carousel .carousel-item img {
   max-width: 100%;
-  display: inline-block; }
+  display: inline-block;
+}
 
 .carousel .carousel-item .btn {
   border-radius: 0;
@@ -272,7 +304,8 @@ section#footer {
   border: none;
   background: #FF948A;
   padding: 6px 15px;
-  margin-top: 5px; }
+  margin-top: 5px;
+}
 
 .carousel .carousel-item .btn:hover {
   background: #ff948aa1; }
@@ -300,7 +333,8 @@ section#footer {
   background: none;
   margin: auto 0;
   border-radius: 50%;
-  border: 3px solid rgba(0, 0, 0, 0.8); }
+  border: 3px solid rgba(0, 0, 0, 0.8);
+}
 
 .carousel-control-prev i, .carousel-control-next i {
   font-size: 36px;
@@ -308,7 +342,7 @@ section#footer {
   top: 50%;
   display: inline-block;
   margin: -19px 0 0 0;
-  z-index: 5;
+  z-index: 100;
   left: 0;
   right: 0;
   color: rgba(0, 0, 0, 0.8);
@@ -329,7 +363,8 @@ section#footer {
   height: 10px;
   border-radius: 50%;
   margin: 4px;
-  border: none; }
+  border: none;
+}
 
 .carousel-indicators li {
   background: #ababab; }
@@ -343,7 +378,24 @@ section#footer {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "banner" "sobreAyun" "textoSobreAyun" "imagenSobreAyun" "sobreMi" "textoSobreMi" "imagenSobreMi" "propuesta" "contenidoPropuesta" "testimonios" "contenidoTestimonios" "servicios" "contenidoServicios" "turnos" "contenidoTurnos" "contacto" "contenidoContacto" "footer"; }
+    grid-template-areas: "banner"
+ "sobreAyun"
+ "textoSobreAyun"
+ "imagenSobreAyun"
+ "sobreMi"
+ "textoSobreMi"
+ "imagenSobreMi"
+ "propuesta"
+ "contenidoPropuesta"
+ "testimonios"
+ "contenidoTestimonios"
+ "servicios"
+ "contenidoServicios"
+ "turnos"
+ "contenidoTurnos"
+ "contacto"
+ "contenidoContacto"
+ "footer"; }
   .containerGrid__textoSobreAyun {
     display: flex;
     justify-content: center;
@@ -389,7 +441,24 @@ section#footer {
     width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "banner" "sobreAyun" "textoSobreAyun" "imagenSobreAyun" "sobreMi" "textoSobreMi" "imagenSobreMi" "propuesta" "contenidoPropuesta" "testimonios" "contenidoTestimonios" "servicios" "contenidoServicios" "turnos" "contenidoTurnos" "contacto" "contenidoContacto" "footer"; }
+    grid-template-areas: "banner"
+ "sobreAyun"
+ "textoSobreAyun"
+ "imagenSobreAyun"
+ "sobreMi"
+ "textoSobreMi"
+ "imagenSobreMi"
+ "propuesta"
+ "contenidoPropuesta"
+ "testimonios"
+ "contenidoTestimonios"
+ "servicios"
+ "contenidoServicios"
+ "turnos"
+ "contenidoTurnos"
+ "contacto"
+ "contenidoContacto"
+ "footer"; }
   .containerGrid__textoSobreAyun {
     display: flex;
     justify-content: left;
