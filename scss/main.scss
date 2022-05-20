@@ -17,7 +17,12 @@ h4{
     color: #FF948A;
 }
 
-
+.nav-item{
+    a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+    }
+}
 
 
 .parrafosNegrita{
@@ -302,6 +307,10 @@ section#footer{
     }
 }
 
+.formatoTurnos{
+    display: flex;
+    justify-content: center;
+}
 
 #containerGrid__contenidoContacto{
     background-color: rgba(255, 255, 255, .6);
@@ -376,7 +385,7 @@ section#footer{
   .carousel .thumb-content {
       font-family: 'Roboto', sans-serif;
       padding: 15px;
-      font-size: 12px;
+      font-size: 14px;
     //   height: 50px;
   }
   .carousel-control-prev, .carousel-control-next {
@@ -451,6 +460,8 @@ section#footer{
         "contenidoContacto"
         "footer";
     }
+
+
 
     // FORMATO INFORMACIÓN DE INICIO
     .containerGrid__textoSobreAyun{
@@ -630,11 +641,12 @@ section#footer{
 
         .containerGrid__footer{
             display: flex;
+            flex-direction: column;
             padding: 20px;
             padding-left: 1%;
             padding-right: 1%;
             background-color: $colorfooter;
-            justify-content: space-around;
+            justify-content: center;
             p{
                 margin: 0;
                 font-size: 13px;
